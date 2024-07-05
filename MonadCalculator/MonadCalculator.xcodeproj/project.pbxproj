@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92CA2D8E2C385EC90084CD5A /* MonadCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */; };
+		92CA2D902C385EC90084CD5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2D8F2C385EC90084CD5A /* ContentView.swift */; };
+		92CA2D922C385ECA0084CD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CA2D912C385ECA0084CD5A /* Assets.xcassets */; };
+		92CA2D952C385ECA0084CD5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CA2D942C385ECA0084CD5A /* Preview Assets.xcassets */; };
+		92CA2D9F2C385ECA0084CD5A /* MonadCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2D9E2C385ECA0084CD5A /* MonadCalculatorTests.swift */; };
+		92CA2DA92C385ECA0084CD5A /* MonadCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DA82C385ECA0084CD5A /* MonadCalculatorUITests.swift */; };
+		92CA2DAB2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DAA2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92CA2D9B2C385ECA0084CD5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92CA2D822C385EC90084CD5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92CA2D892C385EC90084CD5A;
+			remoteInfo = MonadCalculator;
+		};
+		92CA2DA52C385ECA0084CD5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92CA2D822C385EC90084CD5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92CA2D892C385EC90084CD5A;
+			remoteInfo = MonadCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92CA2D8A2C385EC90084CD5A /* MonadCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonadCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorApp.swift; sourceTree = "<group>"; };
+		92CA2D8F2C385EC90084CD5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92CA2D912C385ECA0084CD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92CA2D942C385ECA0084CD5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92CA2D9A2C385ECA0084CD5A /* MonadCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonadCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CA2D9E2C385ECA0084CD5A /* MonadCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorTests.swift; sourceTree = "<group>"; };
+		92CA2DA42C385ECA0084CD5A /* MonadCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonadCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CA2DA82C385ECA0084CD5A /* MonadCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorUITests.swift; sourceTree = "<group>"; };
+		92CA2DAA2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92CA2D872C385EC90084CD5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92CA2D972C385ECA0084CD5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92CA2DA12C385ECA0084CD5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92CA2D812C385EC90084CD5A = {
+			isa = PBXGroup;
+			children = (
+				92CA2D8C2C385EC90084CD5A /* MonadCalculator */,
+				92CA2D9D2C385ECA0084CD5A /* MonadCalculatorTests */,
+				92CA2DA72C385ECA0084CD5A /* MonadCalculatorUITests */,
+				92CA2D8B2C385EC90084CD5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92CA2D8B2C385EC90084CD5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92CA2D8A2C385EC90084CD5A /* MonadCalculator.app */,
+				92CA2D9A2C385ECA0084CD5A /* MonadCalculatorTests.xctest */,
+				92CA2DA42C385ECA0084CD5A /* MonadCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92CA2D8C2C385EC90084CD5A /* MonadCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */,
+				92CA2D8F2C385EC90084CD5A /* ContentView.swift */,
+				92CA2D912C385ECA0084CD5A /* Assets.xcassets */,
+				92CA2D932C385ECA0084CD5A /* Preview Content */,
+			);
+			path = MonadCalculator;
+			sourceTree = "<group>";
+		};
+		92CA2D932C385ECA0084CD5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92CA2D942C385ECA0084CD5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92CA2D9D2C385ECA0084CD5A /* MonadCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				92CA2D9E2C385ECA0084CD5A /* MonadCalculatorTests.swift */,
+			);
+			path = MonadCalculatorTests;
+			sourceTree = "<group>";
+		};
+		92CA2DA72C385ECA0084CD5A /* MonadCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92CA2DA82C385ECA0084CD5A /* MonadCalculatorUITests.swift */,
+				92CA2DAA2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift */,
+			);
+			path = MonadCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92CA2D892C385EC90084CD5A /* MonadCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92CA2DAE2C385ECA0084CD5A /* Build configuration list for PBXNativeTarget "MonadCalculator" */;
+			buildPhases = (
+				92CA2D862C385EC90084CD5A /* Sources */,
+				92CA2D872C385EC90084CD5A /* Frameworks */,
+				92CA2D882C385EC90084CD5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonadCalculator;
+			productName = MonadCalculator;
+			productReference = 92CA2D8A2C385EC90084CD5A /* MonadCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92CA2D992C385ECA0084CD5A /* MonadCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92CA2DB12C385ECA0084CD5A /* Build configuration list for PBXNativeTarget "MonadCalculatorTests" */;
+			buildPhases = (
+				92CA2D962C385ECA0084CD5A /* Sources */,
+				92CA2D972C385ECA0084CD5A /* Frameworks */,
+				92CA2D982C385ECA0084CD5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92CA2D9C2C385ECA0084CD5A /* PBXTargetDependency */,
+			);
+			name = MonadCalculatorTests;
+			productName = MonadCalculatorTests;
+			productReference = 92CA2D9A2C385ECA0084CD5A /* MonadCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92CA2DA32C385ECA0084CD5A /* MonadCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92CA2DB42C385ECA0084CD5A /* Build configuration list for PBXNativeTarget "MonadCalculatorUITests" */;
+			buildPhases = (
+				92CA2DA02C385ECA0084CD5A /* Sources */,
+				92CA2DA12C385ECA0084CD5A /* Frameworks */,
+				92CA2DA22C385ECA0084CD5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92CA2DA62C385ECA0084CD5A /* PBXTargetDependency */,
+			);
+			name = MonadCalculatorUITests;
+			productName = MonadCalculatorUITests;
+			productReference = 92CA2DA42C385ECA0084CD5A /* MonadCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92CA2D822C385EC90084CD5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					92CA2D892C385EC90084CD5A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					92CA2D992C385ECA0084CD5A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 92CA2D892C385EC90084CD5A;
+					};
+					92CA2DA32C385ECA0084CD5A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 92CA2D892C385EC90084CD5A;
+					};
+				};
+			};
+			buildConfigurationList = 92CA2D852C385EC90084CD5A /* Build configuration list for PBXProject "MonadCalculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92CA2D812C385EC90084CD5A;
+			productRefGroup = 92CA2D8B2C385EC90084CD5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92CA2D892C385EC90084CD5A /* MonadCalculator */,
+				92CA2D992C385ECA0084CD5A /* MonadCalculatorTests */,
+				92CA2DA32C385ECA0084CD5A /* MonadCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92CA2D882C385EC90084CD5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CA2D952C385ECA0084CD5A /* Preview Assets.xcassets in Resources */,
+				92CA2D922C385ECA0084CD5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92CA2D982C385ECA0084CD5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92CA2DA22C385ECA0084CD5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92CA2D862C385EC90084CD5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CA2D902C385EC90084CD5A /* ContentView.swift in Sources */,
+				92CA2D8E2C385EC90084CD5A /* MonadCalculatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92CA2D962C385ECA0084CD5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CA2D9F2C385ECA0084CD5A /* MonadCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92CA2DA02C385ECA0084CD5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CA2DAB2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift in Sources */,
+				92CA2DA92C385ECA0084CD5A /* MonadCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92CA2D9C2C385ECA0084CD5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92CA2D892C385EC90084CD5A /* MonadCalculator */;
+			targetProxy = 92CA2D9B2C385ECA0084CD5A /* PBXContainerItemProxy */;
+		};
+		92CA2DA62C385ECA0084CD5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92CA2D892C385EC90084CD5A /* MonadCalculator */;
+			targetProxy = 92CA2DA52C385ECA0084CD5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		92CA2DAC2C385ECA0084CD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92CA2DAD2C385ECA0084CD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92CA2DAF2C385ECA0084CD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MonadCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = BMG3X5CM6G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.traum.marchen.MonadCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92CA2DB02C385ECA0084CD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MonadCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = BMG3X5CM6G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.traum.marchen.MonadCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92CA2DB22C385ECA0084CD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMG3X5CM6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.traum.marchen.MonadCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonadCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MonadCalculator";
+			};
+			name = Debug;
+		};
+		92CA2DB32C385ECA0084CD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMG3X5CM6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.traum.marchen.MonadCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonadCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MonadCalculator";
+			};
+			name = Release;
+		};
+		92CA2DB52C385ECA0084CD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMG3X5CM6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.traum.marchen.MonadCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonadCalculator;
+			};
+			name = Debug;
+		};
+		92CA2DB62C385ECA0084CD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMG3X5CM6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.traum.marchen.MonadCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonadCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92CA2D852C385EC90084CD5A /* Build configuration list for PBXProject "MonadCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92CA2DAC2C385ECA0084CD5A /* Debug */,
+				92CA2DAD2C385ECA0084CD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92CA2DAE2C385ECA0084CD5A /* Build configuration list for PBXNativeTarget "MonadCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92CA2DAF2C385ECA0084CD5A /* Debug */,
+				92CA2DB02C385ECA0084CD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92CA2DB12C385ECA0084CD5A /* Build configuration list for PBXNativeTarget "MonadCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92CA2DB22C385ECA0084CD5A /* Debug */,
+				92CA2DB32C385ECA0084CD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92CA2DB42C385ECA0084CD5A /* Build configuration list for PBXNativeTarget "MonadCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92CA2DB52C385ECA0084CD5A /* Debug */,
+				92CA2DB62C385ECA0084CD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92CA2D822C385EC90084CD5A /* Project object */;
+}
