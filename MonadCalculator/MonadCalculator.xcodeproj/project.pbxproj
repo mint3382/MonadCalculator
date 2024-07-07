@@ -14,6 +14,7 @@
 		92CA2D9F2C385ECA0084CD5A /* MonadCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2D9E2C385ECA0084CD5A /* MonadCalculatorTests.swift */; };
 		92CA2DA92C385ECA0084CD5A /* MonadCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DA82C385ECA0084CD5A /* MonadCalculatorUITests.swift */; };
 		92CA2DAB2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DAA2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift */; };
+		92CA2DB82C38DD580084CD5A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DB72C38DD580084CD5A /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		92CA2DA42C385ECA0084CD5A /* MonadCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonadCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CA2DA82C385ECA0084CD5A /* MonadCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorUITests.swift; sourceTree = "<group>"; };
 		92CA2DAA2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92CA2DB72C38DD580084CD5A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */,
 				92CA2D8F2C385EC90084CD5A /* ContentView.swift */,
+				92CA2DB72C38DD580084CD5A /* ButtonView.swift */,
 				92CA2D912C385ECA0084CD5A /* Assets.xcassets */,
 				92CA2D932C385ECA0084CD5A /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				92CA2D902C385EC90084CD5A /* ContentView.swift in Sources */,
 				92CA2D8E2C385EC90084CD5A /* MonadCalculatorApp.swift in Sources */,
+				92CA2DB82C38DD580084CD5A /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
