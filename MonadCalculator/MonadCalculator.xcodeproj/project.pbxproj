@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92C0D4D82C5645C000109C4E /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0D4D72C5645C000109C4E /* BoardView.swift */; };
 		92CA2D8E2C385EC90084CD5A /* MonadCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */; };
 		92CA2D902C385EC90084CD5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2D8F2C385EC90084CD5A /* ContentView.swift */; };
 		92CA2D922C385ECA0084CD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CA2D912C385ECA0084CD5A /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 		92CA2DA92C385ECA0084CD5A /* MonadCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DA82C385ECA0084CD5A /* MonadCalculatorUITests.swift */; };
 		92CA2DAB2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DAA2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift */; };
 		92CA2DB82C38DD580084CD5A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DB72C38DD580084CD5A /* ButtonView.swift */; };
+		92CA2DBA2C3B69350084CD5A /* OperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DB92C3B69350084CD5A /* OperatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92C0D4D72C5645C000109C4E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		92CA2D8A2C385EC90084CD5A /* MonadCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonadCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorApp.swift; sourceTree = "<group>"; };
 		92CA2D8F2C385EC90084CD5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		92CA2DA82C385ECA0084CD5A /* MonadCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorUITests.swift; sourceTree = "<group>"; };
 		92CA2DAA2C385ECA0084CD5A /* MonadCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonadCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		92CA2DB72C38DD580084CD5A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		92CA2DB92C3B69350084CD5A /* OperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */,
 				92CA2D8F2C385EC90084CD5A /* ContentView.swift */,
 				92CA2DB72C38DD580084CD5A /* ButtonView.swift */,
+				92CA2DB92C3B69350084CD5A /* OperatorView.swift */,
+				92C0D4D72C5645C000109C4E /* BoardView.swift */,
 				92CA2D912C385ECA0084CD5A /* Assets.xcassets */,
 				92CA2D932C385ECA0084CD5A /* Preview Content */,
 			);
@@ -260,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CA2DBA2C3B69350084CD5A /* OperatorView.swift in Sources */,
 				92CA2D902C385EC90084CD5A /* ContentView.swift in Sources */,
+				92C0D4D82C5645C000109C4E /* BoardView.swift in Sources */,
 				92CA2D8E2C385EC90084CD5A /* MonadCalculatorApp.swift in Sources */,
 				92CA2DB82C38DD580084CD5A /* ButtonView.swift in Sources */,
 			);
