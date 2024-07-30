@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct BoardView: View {
+    @Binding var formula: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .font(.largeTitle)
+        Text(formula)
+            .font(.system(size: 70))
             .multilineTextAlignment(.leading)
-            .padding(.all, 100)
+            .frame(minWidth: 300, 
+                   maxWidth: 320,
+                   minHeight: 250,
+                   maxHeight: 280)
+            .padding(.all, 20)
             .background(.cyan)
             .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 }
 
 #Preview {
-    BoardView()
+    BoardView(formula: .constant("123"))
 }

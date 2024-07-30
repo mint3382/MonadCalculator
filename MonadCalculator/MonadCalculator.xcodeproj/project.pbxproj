@@ -77,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92C0D4DB2C564EE100109C4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92C0D4D72C5645C000109C4E /* BoardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		92CA2D812C385EC90084CD5A = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +112,6 @@
 				92CA2D8F2C385EC90084CD5A /* ContentView.swift */,
 				92CA2DB72C38DD580084CD5A /* ButtonView.swift */,
 				92CA2DB92C3B69350084CD5A /* OperatorView.swift */,
-				92C0D4D72C5645C000109C4E /* BoardView.swift */,
 				92CA2D912C385ECA0084CD5A /* Assets.xcassets */,
 				92CA2D932C385ECA0084CD5A /* Preview Content */,
 			);
