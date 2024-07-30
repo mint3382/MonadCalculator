@@ -81,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				92CA2DB72C38DD580084CD5A /* ButtonView.swift */,
+				92CA2DB92C3B69350084CD5A /* OperatorView.swift */,
 				92C0D4D72C5645C000109C4E /* BoardView.swift */,
 			);
 			path = View;
@@ -111,8 +112,6 @@
 			children = (
 				92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */,
 				92CA2D8F2C385EC90084CD5A /* ContentView.swift */,
-				92CA2DB92C3B69350084CD5A /* OperatorView.swift */,
-				92CA2D912C385ECA0084CD5A /* Assets.xcassets */,
 				92C0D4DB2C564EE100109C4E /* View */,
 				92CA2D932C385ECA0084CD5A /* Preview Content */,
 				92CA2D912C385ECA0084CD5A /* Assets.xcassets */,
