@@ -24,7 +24,20 @@ struct OperatorView: View {
             //마지막에 눌린 버튼이 연산자
             isLastOperator = true
             //이전 연산자가 있다면 계산, 없다면 저장하고 진행
-            if beforeOperator != nil {
+            if operatorCase == .allClear {
+                inputNumber = ""
+                computedNumber = 0
+                didTappedOperator = false
+            } else if operatorCase == .enter {
+                if beforeOperator == nil {
+                    computedNumber = Int(inputNumber) ?? 0
+                } else {
+                    calculateFormula()
+                    inputNumber = String(computedNumber)
+                }
+                beforeOperator = nil
+                didTappedOperator = false
+            } else if beforeOperator != nil {
                 didTappedOperator = true
                 calculateFormula()
                 beforeOperator = operatorCase
@@ -63,14 +76,8 @@ struct OperatorView: View {
         case .divide:
             computedNumber /= currentNumber
             inputNumber = String(computedNumber)
-        case .enter:
-            inputNumber = String(computedNumber)
-            beforeOperator = nil
-            didTappedOperator = false
-        case .allClear:
-            inputNumber = ""
-            computedNumber = 0
-            didTappedOperator = false
+        default:
+            print("error")
         }
         print(computedNumber)
     }
