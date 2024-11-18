@@ -18,6 +18,8 @@
 		92CA2DB82C38DD580084CD5A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DB72C38DD580084CD5A /* ButtonView.swift */; };
 		92CA2DBA2C3B69350084CD5A /* OperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA2DB92C3B69350084CD5A /* OperatorView.swift */; };
 		92DD8EF92CEAD5C4001197D0 /* ResultOperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD8EF82CEAD5B3001197D0 /* ResultOperatorView.swift */; };
+		92DD8EFF2CEB37DB001197D0 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD8EFE2CEB37D5001197D0 /* Operator.swift */; };
+		92DD8F012CEB37FE001197D0 /* ResultOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD8F002CEB37FA001197D0 /* ResultOperator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		92CA2DB72C38DD580084CD5A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		92CA2DB92C3B69350084CD5A /* OperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorView.swift; sourceTree = "<group>"; };
 		92DD8EF82CEAD5B3001197D0 /* ResultOperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOperatorView.swift; sourceTree = "<group>"; };
+		92DD8EFE2CEB37D5001197D0 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		92DD8F002CEB37FA001197D0 /* ResultOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOperator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				92CA2D8D2C385EC90084CD5A /* MonadCalculatorApp.swift */,
+				92DD8EFE2CEB37D5001197D0 /* Operator.swift */,
+				92DD8F002CEB37FA001197D0 /* ResultOperator.swift */,
 				92C0D4DB2C564EE100109C4E /* View */,
 				92CA2D932C385ECA0084CD5A /* Preview Content */,
 				92CA2D912C385ECA0084CD5A /* Assets.xcassets */,
@@ -281,6 +287,8 @@
 				92CA2D902C385EC90084CD5A /* ContentView.swift in Sources */,
 				92C0D4D82C5645C000109C4E /* BoardView.swift in Sources */,
 				92CA2D8E2C385EC90084CD5A /* MonadCalculatorApp.swift in Sources */,
+				92DD8F012CEB37FE001197D0 /* ResultOperator.swift in Sources */,
+				92DD8EFF2CEB37DB001197D0 /* Operator.swift in Sources */,
 				92CA2DB82C38DD580084CD5A /* ButtonView.swift in Sources */,
 				92DD8EF92CEAD5C4001197D0 /* ResultOperatorView.swift in Sources */,
 			);
