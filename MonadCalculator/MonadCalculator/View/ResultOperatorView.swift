@@ -1,5 +1,5 @@
 //
-//  ResultView.swift
+//  ResultOperatorView.swift
 //  MonadCalculator
 //
 //  Created by minsong kim on 11/18/24.
@@ -7,17 +7,24 @@
 
 import SwiftUI
 
-struct ResultOperatorView: View {
+struct ResultOperatorView: View, Calculatable {
     let operatorCase: ResultOperator
-    @Binding var inputNumber: String
-    @Binding var computedNumber: Int
-    @Binding var didTappedOperator: Bool
-    @Binding var isLastOperator: Bool
+    @Binding var leftNumber: String?
+    @Binding var rightNumber: String?
+    @Binding var inputOperator: Operator?
     
     var body: some View {
         Button(action: {
-            didTappedOperator = false
-            isLastOperator = false
+            switch operatorCase {
+            case .enter:
+                rightNumber =  calculate()
+                leftNumber = nil
+                inputOperator = nil
+            case .allClear:
+                leftNumber = nil
+                rightNumber = "0"
+                inputOperator = nil
+            }
         }) {
             Text(operatorCase.rawValue)
                 .padding(0.0)
@@ -34,11 +41,6 @@ struct ResultOperatorView: View {
     }
 }
 
-enum ResultOperator: String {
-    case enter = "="
-    case allClear = "AC"
-}
-
 #Preview {
-    ResultOperatorView(operatorCase: .allClear, inputNumber: .constant("0"), computedNumber: .constant(0), didTappedOperator: .constant(true), isLastOperator: .constant(true))
+    ResultOperatorView(operatorCase: .allClear, leftNumber: .constant("0"), rightNumber: .constant("0"), inputOperator: .constant(.minus))
 }

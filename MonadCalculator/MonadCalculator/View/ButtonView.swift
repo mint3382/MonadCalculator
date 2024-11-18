@@ -9,20 +9,15 @@ import SwiftUI
 
 struct ButtonView: View {
     var number: Int
-    @Binding var inputNumber: String
-    @Binding var didTappedOperator: Bool
-    @Binding var isLastOperator: Bool
+    @Binding var rightNumber: String?
     
     var body: some View {
         Button(action: {
-            print(number)
-            if isLastOperator {
-                inputNumber = "\(number)"
-                isLastOperator = false
-            } else {
-                inputNumber += "\(number)"
+            if rightNumber == "0" || Int(rightNumber ?? "") == nil {
+                rightNumber = "\(number)"
+            } else if let rightTerm = rightNumber {
+                rightNumber = rightTerm + "\(number)"
             }
-            didTappedOperator = false
         }) {
             Text(number.codingKey.stringValue)
                 .padding(0.0)
@@ -36,5 +31,5 @@ struct ButtonView: View {
 }
 
 #Preview {
-    ButtonView(number: 1, inputNumber: .constant(""), didTappedOperator: .constant(false), isLastOperator: .constant(true))
+    ButtonView(number: 1, rightNumber: .constant(""))
 }

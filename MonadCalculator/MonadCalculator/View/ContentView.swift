@@ -8,114 +8,68 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var inputNumber: String = ""
-    @State var computedNumber: Int = 0
-    @State var beforeOperator: Operator? = nil
-    @State var didTappedOperator: Bool = true
-    @State var isLastOperator: Bool = false
+    @State var leftNumber: String? = nil
+    @State var rightNumber: String? = "0"
+    @State var inputOperator: Operator? = nil
     
     var body: some View {
-        BoardView(formula: $inputNumber)
+        BoardView(leftNumber: $leftNumber,
+                  rightNumber: $rightNumber,
+                  inputOperator: $inputOperator)
         VStack {
-            HStack {
-                OperatorView(
-                    operatorCase: .plus,
-                    inputNumber: $inputNumber,
-                    computedNumber: $computedNumber,
-                    beforeOperator: $beforeOperator,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                OperatorView(
-                    operatorCase: .minus,
-                    inputNumber: $inputNumber,
-                    computedNumber: $computedNumber,
-                    beforeOperator: $beforeOperator,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                OperatorView(
-                    operatorCase: .multiple,
-                    inputNumber: $inputNumber,
-                    computedNumber: $computedNumber,
-                    beforeOperator: $beforeOperator,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                OperatorView(
-                    operatorCase: .divide,
-                    inputNumber: $inputNumber,
-                    computedNumber: $computedNumber,
-                    beforeOperator: $beforeOperator,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
+            let operators: [Operator] = [.plus, .minus, .multiple, .divide]
+            LazyHGrid(rows: Array(repeating: GridItem(.flexible()), count: 1)) {
+                ForEach(operators, id: \.self) { operatorCase in
+                    OperatorView(
+                        operatorCase: operatorCase,
+                        leftNumber: $leftNumber,
+                        rightNumber: $rightNumber,
+                        inputOperator: $inputOperator
+                    )
+                }
+            }
+            let numbers: [Int] = [1, 2, 3, 0]
+            LazyHGrid(rows: Array(repeating: GridItem(.flexible()), count: 1)) {
+                ForEach(numbers, id: \.self) { number in
+                    ButtonView(
+                        number: number,
+                        rightNumber: $rightNumber
+                    )
+                }
             }
             HStack {
-                ButtonView(
-                    number: 1,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                ButtonView(
-                    number: 2,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                ButtonView(
-                    number: 3,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                ButtonView(
-                    number: 0,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-            }
-            HStack {
-                ButtonView(
-                    number: 4,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                ButtonView(
-                    number: 5,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                ButtonView(
-                    number: 6,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                OperatorView(
+                let numbers: [Int] = [4, 5, 6]
+                LazyHGrid(rows: Array(repeating: GridItem(.flexible()), count: 1)) {
+                    ForEach(numbers, id: \.self) { number in
+                        ButtonView(
+                            number: number,
+                            rightNumber: $rightNumber
+                        )
+                    }
+                }
+                ResultOperatorView(
                     operatorCase: .allClear,
-                    inputNumber: $inputNumber,
-                    computedNumber: $computedNumber,
-                    beforeOperator: $beforeOperator,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
+                    leftNumber: $leftNumber,
+                    rightNumber: $rightNumber,
+                    inputOperator: $inputOperator
+                )
             }
             HStack {
-                ButtonView(
-                    number: 7,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                ButtonView(
-                    number: 8,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                ButtonView(
-                    number: 9,
-                    inputNumber: $inputNumber,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
-                OperatorView(
+                let numbers: [Int] = [7, 8, 9]
+                LazyHGrid(rows: Array(repeating: GridItem(.flexible()), count: 1)) {
+                    ForEach(numbers, id: \.self) { number in
+                        ButtonView(
+                            number: number,
+                            rightNumber: $rightNumber
+                        )
+                    }
+                }
+                ResultOperatorView(
                     operatorCase: .enter,
-                    inputNumber: $inputNumber,
-                    computedNumber: $computedNumber,
-                    beforeOperator: $beforeOperator,
-                    didTappedOperator: $didTappedOperator,
-                    isLastOperator: $isLastOperator)
+                    leftNumber: $leftNumber,
+                    rightNumber: $rightNumber,
+                    inputOperator: $inputOperator
+                )
             }
         }
     }
